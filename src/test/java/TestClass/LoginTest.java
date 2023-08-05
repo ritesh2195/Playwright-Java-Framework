@@ -1,17 +1,26 @@
 package TestClass;
 
 import Base.BaseTest;
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.BrowserType;
-import com.microsoft.playwright.Playwright;
+import PageObejcts.HomePage;
+import com.microsoft.playwright.Page;
 import org.testng.annotations.Test;
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class LoginTest extends BaseTest {
+
+    HomePage homePage;
 
     @Test
     public void LoginUserTest(){
 
-        page.navigate("https:google.com");
+        homePage = new HomePage(page);
+
+        homePage.launchURL();
+
+        homePage.navigateToLoginPage();
+
+        assertThat(page).hasTitle("Account Login");
+
     }
 
 }
