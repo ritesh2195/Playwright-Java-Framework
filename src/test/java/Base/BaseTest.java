@@ -1,43 +1,39 @@
 package Base;
 
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.BrowserType;
+import PageObejcts.HomePage;
+import PageObejcts.LoginPage;
+import Utilities.BrowserFactory;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
 
-    public Playwright playwright;
-
-    public Browser browser;
-
     public Page page;
+
+    BrowserFactory factory;
+
+    protected HomePage homePage;
+
+    protected LoginPage loginPage;
 
     @BeforeTest
     public void setUp(){
 
-        playwright = Playwright.create();
+        factory = new BrowserFactory();
 
-        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)
+        page = factory.initBrowser();
 
-                .setSlowMo(50));
+        homePage = new HomePage(page);
 
-        page = browser.newPage();
+        loginPage = new LoginPage(page);
 
     }
 
     @AfterMethod
     public void tearDown(){
 
-        page.close();
-
-        browser.close();
-
-        playwright.close();
+        page.context().browser().close();
 
     }
 }

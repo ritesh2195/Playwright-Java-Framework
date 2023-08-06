@@ -40,4 +40,9 @@ public class ConfigReader {
 
         return properties.getProperty("url");
     }
+
+    public String getBrowser(){
+
+        return properties.getProperty("browser");
+    }
 }
