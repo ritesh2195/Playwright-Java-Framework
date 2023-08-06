@@ -1,5 +1,6 @@
 package PageObejcts;
 
+import Utilities.ConfigReader;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
@@ -26,7 +27,7 @@ public class HomePage {
 
     public void launchURL(){
 
-        page.navigate("https://naveenautomationlabs.com/opencart/");
+        page.navigate(ConfigReader.getInstance().getURL());
 
     }
 
