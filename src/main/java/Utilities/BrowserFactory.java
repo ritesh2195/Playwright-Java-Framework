@@ -1,6 +1,7 @@
 package Utilities;
 
 import com.microsoft.playwright.*;
+import org.testng.annotations.Parameters;
 
 import java.nio.file.Paths;
 import java.util.Base64;
@@ -33,6 +34,7 @@ public class BrowserFactory {
     public static Page getPage() {
         return tlPage.get();
     }
+
 
     public Page initBrowser() {
 
