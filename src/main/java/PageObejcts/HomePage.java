@@ -25,12 +25,6 @@ public class HomePage {
       this.registerLink = page.locator("text=Register");
     }
 
-//    public void launchURL(){
-//
-//        page.navigate(ConfigReader.getInstance().getURL());
-//
-//    }
-
     public void navigateToLoginPage(){
 
         myAccountLink.click();
