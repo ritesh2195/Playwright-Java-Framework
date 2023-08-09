@@ -73,6 +73,8 @@ public class BrowserFactory {
 
         getPage().navigate(ConfigReader.getInstance().getURL());
 
+        getPage().waitForURL(ConfigReader.getInstance().getURL());
+
         return getPage();
     }
 
