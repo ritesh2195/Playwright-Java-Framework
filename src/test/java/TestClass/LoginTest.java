@@ -12,11 +12,15 @@ public class LoginTest extends BaseTest {
     @Test
     public void LoginUserTest(){
 
+        String email = excelReader.getCellData("Sheet1","Email",2);
+
+        String password = excelReader.getCellData("Sheet1","Password",2);
+
         homePage.navigateToLoginPage();
 
         assertThat(page).hasTitle("Account Login");
 
-        loginPage.login("abcde@gmail.com","qwerty");
+        loginPage.login(email,password);
 
         assertThat(page).hasTitle("My Account");
 
