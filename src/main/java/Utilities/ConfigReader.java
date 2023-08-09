@@ -10,7 +10,7 @@ public class ConfigReader {
 
     private Properties properties;
 
-    private final String filaPath = "src/test/resources/Config.properties";
+    private final String filaPath = "src/test/resources/Config/Config.properties";
 
     private ConfigReader(){
 
