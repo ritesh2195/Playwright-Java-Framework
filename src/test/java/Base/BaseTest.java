@@ -7,6 +7,10 @@ import Utilities.ExcelReader;
 import com.microsoft.playwright.Page;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.util.HashMap;
 
 public class BaseTest {
 
@@ -15,9 +19,7 @@ public class BaseTest {
     BrowserFactory factory;
 
     protected HomePage homePage;
-
     protected LoginPage loginPage;
-
     protected ExcelReader excelReader;
 
     @BeforeTest
@@ -40,6 +42,22 @@ public class BaseTest {
             e.printStackTrace();
         }
 
+    }
+
+    @DataProvider(name = "loginData")
+    public Object[][] getLoginData(){
+
+        String email = excelReader.getCellData("Sheet1","Email",2);
+
+        String password = excelReader.getCellData("Sheet1","Password",2);
+
+        Object [][] objects = new Object[1][2];
+
+        objects[0][0] = email;
+
+        objects[0][1] = password;
+
+        return objects;
     }
 
     @AfterMethod
