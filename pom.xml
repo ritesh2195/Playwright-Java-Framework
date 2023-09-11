@@ -12,6 +12,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <extentreports-version>5.0.8</extentreports-version>
+        <suiteXmlFile>src\test\resources\testrunner\testng_QARunner.xml</suiteXmlFile>
     </properties>
 
     <dependencies>
@@ -72,8 +73,7 @@
                     <reuseForks>true</reuseForks>
                     <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testrunner/testng_QARunner.xml</suiteXmlFile>
-                        <!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
+                        <suiteXmlFile>src\test\resources\testrunner\testng_QARunner.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
