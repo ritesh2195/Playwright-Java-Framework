@@ -144,6 +144,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Open Cart Test Regression PW Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Listeners.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Open Cart Home Page Test_chrome&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
@@ -191,7 +194,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginUserTest')
 data.setCell(0, 2, 'TestClass.LoginTest')
-data.setCell(0, 3, 966);
+data.setCell(0, 3, 1057);
 window.suiteTableData['Open_Cart_Test_Regression_PW_Suite']= { tableData: data, tableDiv: 'times-div-Open_Cart_Test_Regression_PW_Suite'}
 return data;
 }
@@ -229,11 +232,11 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LoginUserTest(abcde@gmail.com, qwerty)</span>
-                <span class="method-start">8713 ms</span>
+                <span class="method-start">8499 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9687 ms</span>
+                <span class="method-start">9556 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

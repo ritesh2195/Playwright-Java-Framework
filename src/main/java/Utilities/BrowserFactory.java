@@ -45,7 +45,7 @@ public class BrowserFactory {
         switch (browserName.toLowerCase()) {
 
             case "chromium":
-                tlBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+                tlBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
                 break;
             case "firefox":
                 tlBrowser.set(getPlaywright().firefox().launch(new BrowserType.LaunchOptions().setHeadless(false)));
@@ -55,7 +55,7 @@ public class BrowserFactory {
                 break;
             case "chrome":
                 tlBrowser.set(
-                        getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false)));
+                        getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(true)));
                 break;
             case "edge":
                 tlBrowser.set(

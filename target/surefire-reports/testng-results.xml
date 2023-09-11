@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-09T13:47:00 IST" name="Open Cart Test Regression PW Suite" finished-at="2023-09-09T13:47:10 IST" duration-ms="9872">
+  <suite started-at="2023-09-09T17:10:57 IST" name="Open Cart Test Regression PW Suite" finished-at="2023-09-09T17:11:07 IST" duration-ms="9792">
     <groups>
     </groups>
-    <test started-at="2023-09-09T13:47:00 IST" name="Open Cart Home Page Test_chrome" finished-at="2023-09-09T13:47:10 IST" duration-ms="9872">
+    <test started-at="2023-09-09T17:10:57 IST" name="Open Cart Home Page Test_chrome" finished-at="2023-09-09T17:11:07 IST" duration-ms="9792">
       <class name="TestClass.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestClass.LoginTest@3f6b0be5]" started-at="2023-09-09T13:47:00 IST" name="setUp" finished-at="2023-09-09T13:47:09 IST" duration-ms="8696" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestClass.LoginTest@f107c50]" started-at="2023-09-09T17:10:57 IST" name="setUp" finished-at="2023-09-09T17:11:06 IST" duration-ms="8483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginUserTest(java.lang.String,java.lang.String)[pri:0, instance:TestClass.LoginTest@3f6b0be5]" started-at="2023-09-09T13:47:09 IST" name="LoginUserTest" data-provider="loginData" finished-at="2023-09-09T13:47:10 IST" duration-ms="966" status="PASS">
+        <test-method signature="LoginUserTest(java.lang.String,java.lang.String)[pri:0, instance:TestClass.LoginTest@f107c50]" started-at="2023-09-09T17:11:06 IST" name="LoginUserTest" data-provider="loginData" finished-at="2023-09-09T17:11:07 IST" duration-ms="1057" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginUserTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestClass.LoginTest@3f6b0be5]" started-at="2023-09-09T13:47:10 IST" name="tearDown" finished-at="2023-09-09T13:47:10 IST" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestClass.LoginTest@f107c50]" started-at="2023-09-09T17:11:07 IST" name="tearDown" finished-at="2023-09-09T17:11:07 IST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
