@@ -20,8 +20,6 @@ public class LoginTest extends BaseTest {
 
         assertThat(page).hasTitle("My Account");
 
-        System.out.println("modified");
-
     }
 
 }
