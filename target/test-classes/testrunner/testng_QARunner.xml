@@ -5,13 +5,13 @@
        parallel="tests" verbose="4">
 
     <listeners>
-        <listener class-name="Listeners.ExtentReportListener"/>
+        <listener class-name="com.qa.listeners.ExtentReportListener"/>
     </listeners>
 
     <test name="Open Cart Home Page Test_chrome">
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="TestClass.LoginTest" />
+            <class name="com.qa.tests.LoginTest" />
         </classes>
     </test>
 
